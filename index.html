@@ -1,10 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Для моей самой любимой</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div class="card">
+    <!-- Анимированное сердечко как главный визуальный акцент -->
+    <div class="heart-icon">❤️</div>
+
+    <h1>Моя безусловная любовь</h1>
+    <p class="subtitle">Я люблю тебя просто за то, что ты есть. Настоящую, искреннюю и самую родную.</p>
+
+    <!-- Блок таймера -->
+    <div class="counters-container">
+        <div class="counter-block">
+            <h3>Мы вместе уже:</h3>
+            <div id="love-timer" class="timer">Загрузка...</div>
+        </div>
+    </div>
+
+    <button class="cta-button" id="action-btn" onclick="revealSecret()">Открыть мои обещания</button>
+
+    <!-- Скрытая секция с обещаниями и купонами -->
+    <div class="secret-content" id="secret-block">
+        <h2>Мои неизменные обещания:</h2>
+        <ul class="promises-list">
+            <li><span>🗓️</span> 1 раз в неделю — наше особенное мини-свидание</li>
+            <li><span>🌹</span> 1 раз в месяц — масштабное, продуманное свидание только для нас двоих</li>
+            <li><span>💆‍♀️</span> Ежедневный расслабряющий массаж (без исключений!)</li>
+        </ul>
+
+        <h2>Твои персональные купоны:</h2>
+        <p class="coupons-hint">Нажми на купон, чтобы активировать его в любой момент</p>
+        <div class="coupons-grid">
+            <div class="coupon-card" onclick="activateCoupon(this, 'Освобождение от домашних дел принято!')">
+                <div class="coupon-emoji">🧺</div>
+                <h4>День «Ничего не делаю»</h4>
+                <p>Забираю на себя весь быт, готовку и уборку.</p>
+            </div>
+            <div class="coupon-card" onclick="activateCoupon(this, 'Заказ любой еды активирован!')">
+                <div class="coupon-emoji">🍕</div>
+                <h4>Каприз шеф-повару</h4>
+                <p>Доставка любой еды или приготовление того, что ты захочешь.</p>
+            </div>
+            <div class="coupon-card" onclick="activateCoupon(this, 'Внеочередной массаж забронирован!')">
+                <div class="coupon-emoji">🛀</div>
+                <h4>Спа-оазис дома</h4>
+                <p>Внеочередной массаж рук, ног или спины, ванна и полный покой.</p>
+            </div>
+            <div class="coupon-card" onclick="activateCoupon(this, 'Купон на романтическое желание принят!')">
+                <div class="coupon-emoji">✨</div>
+                <h4>Романтический каприз</h4>
+                <p>Выполнение любого твоего внезапного желания или совместной идеи.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
