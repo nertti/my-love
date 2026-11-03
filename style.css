@@ -57,6 +57,32 @@ body {
     50% { transform: scale(1.08); }
 }
 
+.together-photo-container {
+    width: 100%;
+    max-width: 320px; /* Оптимальная ширина для мобильных и ПК */
+    height: 220px;    /* Комфортная высота для горизонтального или квадратного фото */
+    margin: 0 auto 1.8rem;
+    overflow: hidden;
+    border-radius: 16px; /* Элегантное скругление углов */
+    border: 4px solid #ffffff;
+    outline: 1px solid #ffe3e7; /* Тонкий контур вокруг рамки */
+    box-shadow: 0 10px 25px rgba(255, 77, 109, 0.12);
+    transform: rotate(-1deg); /* Легкий наклон в стиле живой фотографии */
+    transition: all 0.4s ease;
+}
+
+.together-photo-container:hover {
+    transform: rotate(0deg) scale(1.02); /* Фото выравнивается при наведении */
+    box-shadow: 0 12px 30px rgba(255, 77, 109, 0.2);
+}
+
+.together-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Картинка заполнит блок без искажений и растягивания */
+}
+
+
 h1 {
     font-size: 1.8rem;
     margin-bottom: 0.8rem;
